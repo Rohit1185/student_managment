@@ -1,0 +1,74 @@
+.faculty-container {
+    width: 90%;
+    max-width: 1000px;
+    /* position: relative;
+    left: 0px; */
+    margin: 40px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .faculty-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .faculty-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .faculty-table th, 
+  .faculty-table td {
+    padding: 12px 15px;
+    text-align: left;
+  }
+  
+  .faculty-table th {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .faculty-table tbody tr:nth-child(even) {
+    background-color: #f8f9fa;
+  }
+  
+  .faculty-table tbody tr:hover {
+    background-color: #e9ecef;
+    transition: background 0.3s ease-in-out;
+  }
+  
+  /* FacultyList.css */
+.search-input {
+  width: 100%;
+  max-width: 300px;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.pagination button {
+  padding: 8px 12px;
+  margin: 0 5px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.pagination button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}

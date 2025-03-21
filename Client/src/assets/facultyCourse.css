@@ -1,0 +1,77 @@
+.faculty-course-management {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+h2 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Course Selection */
+.course-selection {
+    margin-bottom: 20px;
+}
+
+.course-selection select {
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Upload Section */
+.upload-section {
+    margin-bottom: 20px;
+}
+
+.upload-section input {
+    margin-right: 10px;
+}
+
+/* Notes Table */
+.notes-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.notes-table th, .notes-table td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.notes-table th {
+    background-color: #2a9df4;
+    color: white;
+    font-weight: bold;
+}
+
+.notes-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.notes-table tr:hover {
+    background-color: #f1f1f1;
+}
+
+.notes-table button {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.notes-table button:hover {
+    background-color: darkred;
+}

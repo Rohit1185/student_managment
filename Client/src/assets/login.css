@@ -1,0 +1,81 @@
+/* Login Container */
+.container{
+    width: 100%;
+}
+.auth-link {
+    color: #007bff;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .auth-link:hover {
+    color: #0056b3;
+    text-decoration: underline;
+  }
+.login-container {
+    max-width: 400px;
+    margin: 60px auto;
+    padding: 25px;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Heading */
+.login-container h2 {
+    font-size: 26px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Input Fields */
+.login-container input {
+    width: 95%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s ease-in-out;
+}
+
+.login-container input:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Error Message */
+.error {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+/* Submit Button */
+.login-container button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 15px;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+.login-container button:hover {
+    background: #0056b3;
+}
+
+/* Responsive */
+@media (max-width: 500px) {
+    .login-container {
+        width: 90%;
+    }
+}

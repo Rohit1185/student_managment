@@ -1,0 +1,157 @@
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    font-family: "Poppins", sans-serif;
+    background-color:  hsl(218, 57%, 97%);
+    min-height: 100vh;
+    min-width: 90vw;
+}
+
+/* 🔹 Header Styling */
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background: #2c3e50;
+    color: white;
+    font-size: 26px;
+    font-weight: bold;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-bottom: 30px;
+}
+.section{
+    display: flex;
+    flex-direction: column;
+}
+/* 🔹 Sections Styling */
+.section,
+.sectionAssignments {
+    width: 80%;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+.sectionAssignments{
+    display: flex;
+    flex-direction: column;
+}
+/* 🔹 Section Headers */
+.section h2,
+.sectionAssignments h2 {
+    font-size: 22px;
+    width:30%;
+    color: #2c3e50;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    border-bottom: 3px solid #007bff;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+/* 🔹 Grid Layout for Notes & Assignments */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Ensures 4 cards per row */
+    /* gap: 20px; */
+    justify-content: center;
+    width: 100%;
+
+}
+
+/* 🔹 Card Styling */
+.card {
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+    border-left: 6px solid #007bff;
+    margin: 15px;
+}
+.card > h3,p,a{
+    padding: 5px;
+}
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* 🔹 Title Styling */
+.title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #2c3e50;
+}
+
+/* 🔹 Download Button */
+.downloadBtn {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 10px 15px;
+    background: #28a745;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    justify-content: center;
+}
+
+.downloadBtn:hover {
+    background: #218838;
+    transform: scale(1.05);
+}
+
+/* 🔹 View Button */
+.viewBtn {
+    padding: 10px 15px;
+    background: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.viewBtn:hover {
+    background: #0056b3;
+    transform: scale(1.05);
+}
+.filterDropdown{
+    width: 20%;
+}
+
+/* 🔹 Mobile Responsive Design */
+@media (max-width: 1200px) {
+    .grid {
+        grid-template-columns: repeat(3, 1fr); /* 3 cards per row on medium screens */
+    }
+}
+
+@media (max-width: 900px) {
+    .grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 cards per row on smaller screens */
+    }
+}
+
+@media (max-width: 600px) {
+    .grid {
+        grid-template-columns: repeat(1, 1fr); /* 1 card per row on mobile */
+    }
+}

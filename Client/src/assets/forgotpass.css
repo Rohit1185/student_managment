@@ -1,0 +1,71 @@
+.update-password {
+  max-width: 400px;
+  width: 100%;
+  min-height: 65vh;
+  margin: 60px auto;
+  padding: 30px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+}
+.update-password:hover {
+  transform: translateY(-2px);
+}
+
+/* 📌 Heading */
+.update-password h2 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+/* 📌 Input Fields */
+.update-password input {
+  width: 90%;
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  margin: 10px 0;
+  background: #f7f9fc;
+  transition: all 0.3s ease;
+}
+
+.update-password input:focus {
+  border-color: #3498db;
+  outline: none;
+  background: #eef7ff;
+  box-shadow: 0 0 8px rgba(52, 152, 219, 0.3);
+}
+.update-pas{
+  margin-top: 50px;
+}
+/* 📌 Button */
+.update-password button {
+  width: 80%;
+  padding: 12px;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  background: #3498db;
+  color: #fff;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(52, 152, 219, 0.3);
+}
+
+.update-password button:hover {
+  background: #2980b9;
+  transform: scale(1.02);
+}
+
+/* 📌 Responsive Design */
+@media (max-width: 768px) {
+  .update-password {
+    max-width: 90%;
+  }
+}

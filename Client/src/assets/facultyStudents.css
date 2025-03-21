@@ -1,0 +1,103 @@
+/* Faculty Students Page - Professional Table Format */
+.faculty-students {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 20px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+h2 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Search Bar */
+.search-bar {
+    width: 70%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    outline: none;
+}
+
+/* Table Container */
+.table-container {
+    overflow-x: auto;
+}
+
+/* Professional Students Table */
+.students-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.students-table th, .students-table td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.students-table th {
+    background-color: #2a9df4;
+    color: white;
+    font-weight: bold;
+}
+
+/* Alternate row background */
+.students-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* Hover effect */
+.students-table tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* No students message */
+.no-students {
+    font-size: 18px;
+    color: red;
+    font-weight: bold;
+}
+
+/* Pagination Controls */
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.pagination button {
+    background-color: #2a9df4;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    margin: 0 10px;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.pagination button:hover {
+    background-color: #007acc;
+}
+
+.pagination button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.pagination span {
+    font-size: 16px;
+    font-weight: bold;
+}
