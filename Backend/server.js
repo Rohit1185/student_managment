@@ -5,8 +5,7 @@ const dbconnet = require('./Config/dbconfig')
 const Inquiry = require('./Router/InquiryRouter')
 const path = require('path')
 app.use(cors(
-    {origin: "http://localhost:5173", // Allow requests from React app
-    credentials: true,}
+    {origin: ["http://localhost:5173","http://localhost:5174"], credentials: true,}
 ))
 app.use(express.json())
 app.use(express.urlencoded({extended:true}))
